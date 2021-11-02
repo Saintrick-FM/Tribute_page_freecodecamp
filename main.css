@@ -3,6 +3,11 @@
     src: url('./polices/GRAVEDIGGER\ PERSONAL\ USE.ttf');
 }
 
+@font-face {
+    font-family: lobster;
+    src: url('./polices/Lobster-Regular.ttf');
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -11,24 +16,44 @@
 a {
     color: white;
     text-decoration: none;
+    font-family: lobster, 'Times New Roman', Times, serif;
+    font-size: 1.2em;
 }
 
-p,
-h1,
+a[class="link_FontFamily"],
 h2,
 h3,
 h4 {
     color: white;
-    font-family: gravedigger, 'Times New Roman', Times, serif;
+    font-family: gravedigger, lobster, 'Times New Roman', Times, serif;
+}
+
+h1 {
+    color: violet
+}
+
+#intro {
+    border-bottom: violet solid;
+    border-radius: 55px;
+    border-width: 10px;
+    box-shadow: violet;
+    margin: 0px 60px -7px 60px;
 }
 
 .paragraph {
-    text-transform: capitalize;
+    margin-top: 20px;
+    font-family: lobster, 'Times New Roman', Times, serif;
+    font-size: 2em;
+    font-weight: 100;
+    color: white;
+    width: auto;
+    margin: 15px 60px 15px 60px;
 }
 
 .numbers {
     color: white;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: lobster, 'Times New Roman', Times, serif;
+    font-size: 1.2em;
 }
 
 #logo {
@@ -49,6 +74,9 @@ body {
     /*margin: 0px 2px 0px 2px;
      position: relative; */
     text-align: center;
+    background: linear-gradient(90deg, rgb(64, 0, 0), violet, black);
+    font-family: lobster, 'Times New Roman', Times, serif;
+    font-size: 1.3em;
 }
 
 header {
@@ -94,7 +122,8 @@ ul {
 }
 
 a:hover {
-    border-bottom: 4px solid rgb(241, 228, 38);
+    /* border-bottom: 4px solid rgb(241, 228, 38); */
+    border-bottom: 4px solid violet;
 }
 
 #main {
@@ -103,51 +132,61 @@ a:hover {
     background-size: 1500px;
     background-repeat: repeat-y;
     padding-top: 70px;
-    z-index: 1;
+    z-index: 2;
+    opacity: 1;
 }
 
 figure {
     border: thin #c0c0c0 solid;
-    border-radius: 20px;
+    border-radius: 25px;
     border-style: hidden;
     display: flex;
     flex-flow: column;
     padding: 5px;
     max-width: 80%;
     margin: auto;
-    margin-top: 25px;
-    z-index: 2;
-    opacity: 0.9;
+    margin-top: 1px;
+    z-index: 1;
+    box-shadow: linear-gradient(90deg, rgb(64, 0, 0), violet, black);
 }
 
 img {
     max-width: 100%;
     height: auto;
-    border: thin #353434 solid;
-    border-radius: 20px;
+    border-radius: 25px;
+    border-style: hidden;
+    box-shadow: 10px 10px 5px violet;
+    -moz-box-shadow: 10px 10px 5px violet;
+    -webkit-box-shadow: 10px 10px 5px violet;
+    -moz-border-radius: 25px;
+    -webkit-border-radius: 25px;
 }
 
 figcaption {
     background-color: #222;
     color: #fff;
-    font: italic smaller gravedigger;
+    font: smaller gravedigger;
     padding: 3px;
     text-align: center;
+    margin-top: 25px;
 }
 
 footer {
     width: 100%;
     height: 40px;
-    padding-top: 20px;
+    padding: 10px 0px 10px 0px;
     background: linear-gradient(50deg, rgb(64, 0, 0), violet, black);
+    font-size: 1.5em;
 }
 
 #nelson_website {
-    font-family: 'Times New Roman', Times, serif;
     font-style: italic;
+    font-size: 0.8em;
+    width: 20px;
+    padding-bottom: 15px;
 }
 
 small {
-    font-size: 1.3em;
-    text-transform: lowercase;
+    font-size: 1.2em;
+    text-transform: none;
 }
