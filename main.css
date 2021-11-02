@@ -13,11 +13,22 @@ a {
     text-decoration: none;
 }
 
+p,
 h1,
 h2,
 h3,
 h4 {
     color: white;
+    font-family: gravedigger, 'Times New Roman', Times, serif;
+}
+
+.paragraph {
+    text-transform: capitalize;
+}
+
+.numbers {
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 #logo {
@@ -35,12 +46,9 @@ body {
     padding-left: 0px;
     padding-right: 0px;
     padding-bottom: 0px;
-    margin: 0px 2px 0px 2px;
-    background-image: url("images/pexels-paul-basel-2208967.jpg");
-    background-size: 1500px;
-    background-repeat: no-repeat;
-    position: relative;
-    font-family: gravedigger;
+    /*margin: 0px 2px 0px 2px;
+     position: relative; */
+    text-align: center;
 }
 
 header {
@@ -49,9 +57,10 @@ header {
     position: fixed;
     flex-direction: row;
     justify-content: space-between;
-    width: 100vw;
+    width: 100%;
     height: auto;
     padding: 5px 0px;
+    z-index: 3;
 }
 
 nav {
@@ -74,12 +83,14 @@ ul {
     margin-right: 25px;
     padding-right: 25px;
     padding: 10px;
+    text-transform: uppercase;
 }
 
 #third_link {
     position: relative;
     margin-right: 25px;
     padding: 10px;
+    text-transform: uppercase;
 }
 
 a:hover {
@@ -87,22 +98,56 @@ a:hover {
 }
 
 #main {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     width: 100%;
+    background-image: url("images/pexels-paul-basel-2208967.jpg");
+    background-size: 1500px;
+    background-repeat: repeat-y;
+    padding-top: 70px;
+    z-index: 1;
 }
 
-
-/*
-.navButton {
-    margin: 0 15px 0 15px;
-    border-radius: 45px;
-    width: 100px;
-    height: 50px;
-    box-shadow: 15px;
+figure {
+    border: thin #c0c0c0 solid;
+    border-radius: 20px;
+    border-style: hidden;
+    display: flex;
+    flex-flow: column;
+    padding: 5px;
+    max-width: 80%;
+    margin: auto;
+    margin-top: 25px;
+    z-index: 2;
+    opacity: 0.9;
 }
 
-.navButton:hover {
-    background-color: aqua;
-}*/
+img {
+    max-width: 100%;
+    height: auto;
+    border: thin #353434 solid;
+    border-radius: 20px;
+}
+
+figcaption {
+    background-color: #222;
+    color: #fff;
+    font: italic smaller gravedigger;
+    padding: 3px;
+    text-align: center;
+}
+
+footer {
+    width: 100%;
+    height: 40px;
+    padding-top: 20px;
+    background: linear-gradient(50deg, rgb(64, 0, 0), violet, black);
+}
+
+#nelson_website {
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+}
+
+small {
+    font-size: 1.3em;
+    text-transform: lowercase;
+}
