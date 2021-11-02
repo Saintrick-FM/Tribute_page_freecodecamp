@@ -10,6 +10,7 @@
 
 a {
     color: white;
+    text-decoration: none;
 }
 
 h1,
@@ -22,6 +23,11 @@ h4 {
 #logo {
     position: relative;
     margin-top: 10px;
+    padding-left: 10px;
+}
+
+#logo span {
+    color: red;
 }
 
 body {
@@ -31,7 +37,6 @@ body {
     padding-bottom: 0px;
     margin: 0px 2px 0px 2px;
     background-image: url("images/pexels-paul-basel-2208967.jpg");
-    /* ; */
     background-size: 1500px;
     background-repeat: no-repeat;
     position: relative;
@@ -44,8 +49,8 @@ header {
     position: fixed;
     flex-direction: row;
     justify-content: space-between;
-    width: 100%;
-    height: 50px;
+    width: 100vw;
+    height: auto;
     padding: 5px 0px;
 }
 
@@ -56,20 +61,11 @@ nav {
     flex-direction: row;
 }
 
-*button:hover {
-    border-bottom-style: solid;
-    border-bottom-color: green;
-    padding-bottom: 25px;
-}
-
 ul {
     display: flex;
     list-style: none;
     align-items: flex-end;
-    position: relative;
-    right: auto;
-    border: none;
-    margin-left: 25px;
+    margin-top: -10px;
 }
 
 #first_link,
@@ -77,23 +73,17 @@ ul {
     position: relative;
     margin-right: 25px;
     padding-right: 25px;
-    border: 6px solid white;
-    border-radius: 10px;
     padding: 10px;
 }
 
 #third_link {
     position: relative;
-    margin-right: 10px;
-    border: 6px solid white;
-    border-radius: 10px;
+    margin-right: 25px;
     padding: 10px;
 }
 
-button {
-    padding: 8px;
-    border: 2px solid crimson;
-    border-radius: 30px
+a:hover {
+    border-bottom: 4px solid rgb(241, 228, 38);
 }
 
 #main {
