@@ -8,9 +8,11 @@
     padding: 0;
 }
 
+
+/* 
 html {
     scroll-behavior: smooth;
-}
+} */
 
 a {
     color: white;
@@ -32,15 +34,35 @@ h2 {
 
 #timeline {
     display: block;
-    list-style-type: circle;
+    list-style-type: disc;
+    list-style-position: inside;
+}
+
+.timeline_item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.first_left_timeline {
+    padding: 10px 0px 10px 10px;
+}
+
+.timeline_span {
+    padding: 5px 10px;
+}
+
+hr {
+    opacity: 0.4;
 }
 
 #tribute-info {
-    border-bottom: violet solid;
+    border-bottom: rgba(238, 130, 238, 0.2) solid;
     border-radius: 55px;
     border-width: 10px;
-    box-shadow: violet;
+    box-shadow: rgb(238, 130, 238, 0.2);
     margin: 0px 60px -7px 60px;
+    background-color: rgba(238, 130, 238, 0.1);
 }
 
 .paragraph {
@@ -78,6 +100,7 @@ body {
     background: linear-gradient(90deg, rgb(64, 0, 0), violet, black);
     font-family: lobster, 'Times New Roman', Times, serif;
     font-size: 1.3em;
+    height: 100vh;
 }
 
 header {
@@ -99,11 +122,22 @@ nav {
     flex-direction: row;
 }
 
-ul {
+#navbar_links {
     display: flex;
     list-style: none;
     align-items: flex-end;
     margin-top: -10px;
+}
+
+#timeline {
+    margin: 20px 100px 0px 100px;
+    padding-bottom: 20px;
+    background: linear-gradient(80deg, rgba(64, 0, 0, 0.3), rgba(241, 137, 241, 0.3), black);
+    z-index: 2;
+}
+
+#timeline li {
+    color: white
 }
 
 #first_link,
@@ -130,7 +164,7 @@ a:hover {
 
 #main {
     width: 100%;
-    background-image: url("images/pexels-paul-basel-2208967.jpg");
+    /* background-image: url("images/Webp.net-resizeimage-tablette768.jpg"); */
     background-size: 1500px;
     background-repeat: repeat-y;
     padding-top: 70px;
@@ -150,7 +184,7 @@ a:hover {
     padding: 5px;
     max-width: 80%;
     margin: auto;
-    margin-top: 1px;
+    margin-top: 60px;
     z-index: 1;
     box-shadow: linear-gradient(90deg, rgb(64, 0, 0), violet, black);
 }
@@ -184,8 +218,9 @@ footer {
     width: 100%;
     height: 40px;
     padding: 10px 0px 10px 0px;
-    background: linear-gradient(50deg, rgb(64, 0, 0), violet, black);
+    background: linear-gradient(50deg, rgba(64, 0, 0, 0.8), violet, black);
     font-size: 1.5em;
+    margin-top: 10px;
 }
 
 #nelson_website {
@@ -201,4 +236,42 @@ footer {
 small {
     font-size: 1.2em;
     text-transform: none;
+    color: rgb(19, 14, 14);
+}
+
+@media screen and (max-width: 320px) {
+    #main {
+        background-image: url("images/pexels-paul-basel-mobile320.jpg");
+    }
+    a,
+    h4 {
+        font-size: 0.8em;
+    }
+    h1 {
+        font-size: 1.3em;
+    }
+    #tribute-info {
+        margin: 10px
+    }
+    .paragraph,
+    #img-caption {
+        font-size: 0.8em;
+        margin: 10px 5px 5px 5px;
+        font-weight: 50;
+    }
+    #img-caption {
+        padding: 5px
+    }
+    nav {
+        display: flex;
+        margin-left: 5px;
+        align-content: flex-end;
+        justify-content: flex-end;
+    }
+}
+
+@media screen and (min-width: 760px) {
+    #main {
+        background-image: url("images/pexels-paul-basel-2208967.jpg");
+    }
 }

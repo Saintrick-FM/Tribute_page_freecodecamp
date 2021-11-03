@@ -11,6 +11,8 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
     </style>
+
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
     <script src='main.js'></script>
 </head>
 
@@ -24,13 +26,13 @@
 
         <!-- navigation -->
         <nav>
-            <ul>
+            <ul id="navbar_links">
                 <li id="first_link">
                     <a href="#tribute-info" id="scroll_to_title" class="link_FontFamily">Briefly</a>
                 </li>
 
                 <li id="third_link">
-                    <a href="#timeline" id="scroll_to_timeline" class="link_FontFamily">Timeline
+                    <a href="#second_stop" id="scroll_to_timeline" class="link_FontFamily">Timeline
                     </a>
                 </li>
 
@@ -48,45 +50,66 @@
             <p class="paragraph">was a social rights activist, politician and philanthropist who became South Africa's first Black president from <span class="numbers"> 1994 </span>to <span class="numbers"> 1999 </span>.</p>
         </div>
         <figure id="img-div">
-            <img src="images/nelson-mandela.jpg" id="image" alt="">
+            <img src="images/pixlr-bg-result.png" id="image" alt="">
             <figcaption id="img-caption">👪 Nelson Mandela, center, with his three daughters and grandchildren. 👪 </figcaption>
+
+
         </figure>
 
-        <section>
 
+        <section id="second_stop">
 
+            <h1>
+                <u> Timeline </u>
+            </h1>
             <ul id="timeline">
-                <h1>
-                    <u> Timeline </u>
-                </h1>
-                <li>A Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam distinctio earum obcaecati, aperiam minus voluptate reiciendis vel quod. Soluta culpa excepturi alias, nisi necessitatibus ut perspiciatis et ab qui quidem.</li>
-                <hr>
-                <br>
-                <li>B Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi unde, nulla cumque recusandae vero dolore impedit placeat voluptatem? Eaque culpa earum est, soluta quidem sequi. Vero ex commodi ipsa numquam?</li>
-                <hr>
-                <br>
-                <li>C Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex a similique omnis cupiditate sapiente tempore itaque, magnam corrupti odio qui delectus quisquam, voluptates veritatis eum vero dicta! Ea, accusantium accusamus.</li>
-                <hr>
-                <br>
-                <li>D Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis ex eius provident sapiente perspiciatis dolor natus sequi facilis. Iste tempora mollitia quia laboriosam quidem quaerat eos, tempore ex. Veniam, quasi.</li>
-                <li>E Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis repellendus fugiat cumque aspernatur aperiam facilis ut assumenda deserunt quisquam, numquam tempora dolor ipsum et blanditiis, earum provident vel voluptate minus.</li>
-                <hr>
-                <br>
 
-                <li>F Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt ad tempora magnam alias tenetur voluptate eaque culpa, possimus sapiente quaerat qui fuga saepe, dignissimos ea commodi error blanditiis animi eius.</li>
+                <li class="timeline_item"> <span class="first_left_timeline">▫ 1918 July 18 </span> <span> Born Rolihlahla Mandela at Mvezo in the Transkei </span></li>
                 <hr>
-                <br>
 
-                <li>G Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus, labore doloremque? Fugiat voluptates alias at dolorum unde ut illum temporibus magni dolor officiis dolores, cum veniam ducimus ea ab non?</li>
+
+                <li class="timeline_item"><span class="timeline_span">▫ 1939 </span> He is admitted to the University of Fort Hare, a black institution. Two years later he will be expelled for leading a student protest.</li>
                 <hr>
-                <br>
-
-                <li>H Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi deserunt veniam consequuntur doloremque vero incidunt animi minima ad fuga ducimus possimus ut reprehenderit, minus vitae? Eligendi, quibusdam modi! Fugiat, sit.</li>
+                <li class="timeline_item"><span class="timeline_span">▫ 1944 </span> Mr. Mandela marries Evelyn Ntoko Mase. The couple will have four children. Then He forms the A.N.C. Youth League </li>
                 <hr>
-                <br>
 
-                <li>I Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente natus dolorem consectetur inventore minus nobis aut! Inventore, ad cum iure ut non explicabo? Architecto voluptatum assumenda sit eveniet, deleniti at?</li>
-                <li>J</li>
+                <li class="timeline_item"><span class="timeline_span">▫ 1952 </span> Mandela Starts Law Practice</li>
+                <hr>
+                <li class="timeline_item"><span class="timeline_span">▫ Dec. 5, 1956 </span> Mandela Arrested on Treason Charges</li>
+                <hr>
+                <li class="timeline_item"><span class="timeline_span">▫ 1958 </span> During Trial, a Second Marriage</li>
+                <hr>
+                <li class="timeline_item"><span class="timeline_span">▫ March 29, 1961 </span> Mr. Mandela and his co-defendants are acquitted of treason.</li>
+                <hr>
+                <li class="timeline_item"><span class="timeline_span">▫ Dec. 16, 1961 </span> Mr. Mandela becomes the first commander in chief of the guerrilla army.</li>
+                <hr>
+                <li class="timeline_item"><span class="timeline_span">▫ Aug. 5, 1962 </span>Mr. Mandela is arrested after returning to South Africa from a trip abroad.</li>
+                <hr>
+                <li class="timeline_item"><span class="timeline_span">▫ June 12, 1964 </span>Mr. Mandela and seven others are convicted and sentenced to life in prison.</li>
+                <hr>
+                <li class="timeline_item"><span class="timeline_span">▫ Aug. 5, 1962 </span>Mr. Mandela is arrested after returning to South Africa from a trip abroad.</li>
+                <hr>
+                <li class="timeline_item"><span class="timeline_span">▫ March 28, 1982 </span>Moved From an Isolated Prison</li>
+                <hr>
+                <li class="timeline_item"><span class="timeline_span">▫ Feb. 10, 1985 </span>South Africa’s president, P. W. Botha, offers to free Mr. Mandela if he renounces violence. Mr. Mandela refuses, saying the government must first dismantle apartheid.</li>
+                <hr>
+
+                <li class="timeline_item"><span class="timeline_span">▫ Dec. 7, 1988 </span>Mr. Mandela is transferred to the Victor Verster Prison Farm, about 50 miles from Cape Town. </li>
+                <hr>
+                <li class="timeline_item"><span class="timeline_span">▫ July. 5, 1989 </span>Mr. Mandela meets informally with Mr. Botha at the presidential office in Cape Town.</li>
+                <hr>
+                <li class="timeline_item"><span class="timeline_span">▫ Aug. 15, 1989 </span>New President Pledges to Phase Out Apartheid</li>
+                <hr>
+                <li class="timeline_item"><span class="timeline_span">▫ Feb. 2, 1990 </span>Ban Lifted on A.N.C.; Mandela's Release Promised</li>
+                <hr>
+
+                <li class="timeline_item"><span class="timeline_span">▫ Aug. 5, 1962 </span>Mr. Mandela is arrested after returning to South Africa from a trip abroad.</li>
+                <hr>
+                <li class="timeline_item"><span class="timeline_span">▫ Aug. 5, 1962 </span>Mr. Mandela is arrested after returning to South Africa from a trip abroad.</li>
+                <hr>
+
+
+
             </ul>
         </section>
     </main>
