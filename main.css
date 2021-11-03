@@ -3,14 +3,13 @@
     src: url('./polices/GRAVEDIGGER\ PERSONAL\ USE.ttf');
 }
 
-@font-face {
-    font-family: lobster;
-    src: url('./polices/Lobster-Regular.ttf');
-}
-
 * {
     margin: 0;
     padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 a {
@@ -20,19 +19,23 @@ a {
     font-size: 1.2em;
 }
 
-a[class="link_FontFamily"],
-h2,
-h3,
-h4 {
+a[class="link_FontFamily"] {
     color: white;
     font-family: gravedigger, lobster, 'Times New Roman', Times, serif;
 }
 
-h1 {
+#title,
+h1,
+h2 {
     color: violet
 }
 
-#intro {
+#timeline {
+    display: block;
+    list-style-type: circle;
+}
+
+#tribute-info {
     border-bottom: violet solid;
     border-radius: 55px;
     border-width: 10px;
@@ -71,8 +74,6 @@ body {
     padding-left: 0px;
     padding-right: 0px;
     padding-bottom: 0px;
-    /*margin: 0px 2px 0px 2px;
-     position: relative; */
     text-align: center;
     background: linear-gradient(90deg, rgb(64, 0, 0), violet, black);
     font-family: lobster, 'Times New Roman', Times, serif;
@@ -124,6 +125,7 @@ ul {
 a:hover {
     /* border-bottom: 4px solid rgb(241, 228, 38); */
     border-bottom: 4px solid violet;
+    border-bottom-right-radius: 12px;
 }
 
 #main {
@@ -136,7 +138,10 @@ a:hover {
     opacity: 1;
 }
 
-figure {
+
+/* img-caption */
+
+#img-div {
     border: thin #c0c0c0 solid;
     border-radius: 25px;
     border-style: hidden;
@@ -150,7 +155,7 @@ figure {
     box-shadow: linear-gradient(90deg, rgb(64, 0, 0), violet, black);
 }
 
-img {
+#image {
     max-width: 100%;
     height: auto;
     border-radius: 25px;
@@ -162,14 +167,18 @@ img {
     -webkit-border-radius: 25px;
 }
 
-figcaption {
+#img-caption {
     background-color: #222;
     color: #fff;
-    font: smaller gravedigger;
-    padding: 3px;
+    font: bold;
+    padding: 20px;
     text-align: center;
-    margin-top: 25px;
+    margin: 25px;
+    border-radius: 50px;
 }
+
+
+/* footer */
 
 footer {
     width: 100%;
@@ -180,10 +189,13 @@ footer {
 }
 
 #nelson_website {
+    padding-bottom: 15px;
+}
+
+#tribute-link {
     font-style: italic;
     font-size: 0.8em;
     width: 20px;
-    padding-bottom: 15px;
 }
 
 small {

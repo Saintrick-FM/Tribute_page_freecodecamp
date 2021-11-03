@@ -7,14 +7,18 @@
     <title>Tribute page</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <!-- <script src='main.js'></script> -->
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+    </style>
+    <script src='main.js'></script>
 </head>
 
 <body>
     <!-- Header -->
     <header>
 
-        <a href="https://www.nelsonmandela.org" class="link_FontFamily" target="_blank" id="title">
+        <a href="https://www.nelsonmandela.org" target="_blank" class="link_FontFamily">
             <h4 id="logo"><span>N</span>elson <span> M</span>ANDELA</h4>
         </a>
 
@@ -22,16 +26,11 @@
         <nav>
             <ul>
                 <li id="first_link">
-                    <a href="#" class="link_FontFamily"> Biographie</a>
-                </li>
-
-                <li id="second_link">
-                    <a href="#" class="link_FontFamily">Autres
-                    </a>
+                    <a href="#tribute-info" id="scroll_to_title" class="link_FontFamily">Briefly</a>
                 </li>
 
                 <li id="third_link">
-                    <a href="#" class="link_FontFamily">Contact
+                    <a href="#timeline" id="scroll_to_timeline" class="link_FontFamily">Timeline
                     </a>
                 </li>
 
@@ -41,55 +40,61 @@
     <!-- Main content -->
     <main id="main">
 
-        <div id="intro">
+        <div id="tribute-info">
 
-            <h1>
+            <h1 id="title">
                 Nelson MANDELA
             </h1>
             <p class="paragraph">was a social rights activist, politician and philanthropist who became South Africa's first Black president from <span class="numbers"> 1994 </span>to <span class="numbers"> 1999 </span>.</p>
         </div>
-        <figure>
-            <img src="images/nelson-mandela.jpg" alt="">
-            <figcaption>Nelson Mandela with his family 👪 </figcaption>
+        <figure id="img-div">
+            <img src="images/nelson-mandela.jpg" id="image" alt="">
+            <figcaption id="img-caption">👪 Nelson Mandela, center, with his three daughters and grandchildren. 👪 </figcaption>
         </figure>
-        <!-- <img src="images/pexels-cedric-1236044.jpg" style="max-width: 100%;
-                height:auto" alt="" id="img"> -->
+
+        <section>
 
 
+            <ul id="timeline">
+                <h1>
+                    <u> Timeline </u>
+                </h1>
+                <li>A Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam distinctio earum obcaecati, aperiam minus voluptate reiciendis vel quod. Soluta culpa excepturi alias, nisi necessitatibus ut perspiciatis et ab qui quidem.</li>
+                <hr>
+                <br>
+                <li>B Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi unde, nulla cumque recusandae vero dolore impedit placeat voluptatem? Eaque culpa earum est, soluta quidem sequi. Vero ex commodi ipsa numquam?</li>
+                <hr>
+                <br>
+                <li>C Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex a similique omnis cupiditate sapiente tempore itaque, magnam corrupti odio qui delectus quisquam, voluptates veritatis eum vero dicta! Ea, accusantium accusamus.</li>
+                <hr>
+                <br>
+                <li>D Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis ex eius provident sapiente perspiciatis dolor natus sequi facilis. Iste tempora mollitia quia laboriosam quidem quaerat eos, tempore ex. Veniam, quasi.</li>
+                <li>E Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis repellendus fugiat cumque aspernatur aperiam facilis ut assumenda deserunt quisquam, numquam tempora dolor ipsum et blanditiis, earum provident vel voluptate minus.</li>
+                <hr>
+                <br>
 
-        <h2>
-            Titre de ma section
-        </h2>
-        <p>
-            Texte de ma section. Avec des articles liés :
-        </p>
+                <li>F Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt ad tempora magnam alias tenetur voluptate eaque culpa, possimus sapiente quaerat qui fuga saepe, dignissimos ea commodi error blanditiis animi eius.</li>
+                <hr>
+                <br>
 
-        <!-- <div>
-                <article>
-                    <h2>
-                        Titre de mon article
-                    </h2>
-                    <p>
-                        Texte de mon article.
-                    </p>
-                </article>
-                <article>
-                    <h2>
-                        Titre de mon article
-                    </h2>
-                    <p>
-                        Texte de mon article.
-                    </p>
-                </article>
-            </div> -->
+                <li>G Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus, labore doloremque? Fugiat voluptates alias at dolorum unde ut illum temporibus magni dolor officiis dolores, cum veniam ducimus ea ab non?</li>
+                <hr>
+                <br>
 
+                <li>H Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi deserunt veniam consequuntur doloremque vero incidunt animi minima ad fuga ducimus possimus ut reprehenderit, minus vitae? Eligendi, quibusdam modi! Fugiat, sit.</li>
+                <hr>
+                <br>
 
+                <li>I Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente natus dolorem consectetur inventore minus nobis aut! Inventore, ad cum iure ut non explicabo? Architecto voluptatum assumenda sit eveniet, deleniti at?</li>
+                <li>J</li>
+            </ul>
+        </section>
     </main>
     <!-- Footer -->
     <footer>
         <p>
             <small>
-					For more informations about Nelson Mandela visit 👉  <a href="https://www.nelsonmandela.org"> <span id="nelson_website">nelsonmandela.org</span></a>
+					For more informations about Nelson Mandela visit 👉  <a href="https://www.nelsonmandela.org" id="tribute-link" target="_blank"> <span id="nelson_website">nelsonmandela.org</span></a>
 				</small>
         </p>
     </footer>
