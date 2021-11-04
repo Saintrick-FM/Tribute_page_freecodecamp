@@ -164,8 +164,7 @@ a:hover {
 
 #main {
     width: 100%;
-    /* background-image: url("images/Webp.net-resizeimage-tablette768.jpg"); */
-    background-size: 1500px;
+    /* background-size: 1500px; */
     background-repeat: repeat-y;
     padding-top: 70px;
     z-index: 2;
@@ -239,9 +238,9 @@ small {
     color: rgb(19, 14, 14);
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 425px) {
     #main {
-        background-image: url("images/pexels-paul-basel-mobile320.jpg");
+        background-image: url("images/Webp.net-resizeimage-mobile425.jpg");
     }
     a,
     h4 {
@@ -262,16 +261,32 @@ small {
     #img-caption {
         padding: 5px
     }
-    nav {
-        display: flex;
-        margin-left: 5px;
-        align-content: flex-end;
-        justify-content: flex-end;
+}
+
+@media screen and (min-width: 426px) and (max-width: 768px) {
+    #main {
+        background-image: url("images/Webp.net-resizeimage-tablette768.jpg");
     }
 }
 
-@media screen and (min-width: 760px) {
+@media screen and (min-width: 769px) and (max-width: 1000px) {
+    #main {
+        background-image: url("images/pexels-paul-basel-2208967.jpg");
+        background-size: 1000px;
+    }
+}
+
+@media screen and (min-width:1001 px) {
     #main {
         background-image: url("images/pexels-paul-basel-2208967.jpg");
     }
 }
+
+@media screen and (min-width: 1001px) {
+    #main {
+        background-image: url("images/pexels-paul-basel-2208967.jpg");
+        background-size: 1400px;
+    }
+}
+
+*/
