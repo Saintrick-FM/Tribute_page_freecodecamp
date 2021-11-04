@@ -29,27 +29,43 @@ a[class="link_FontFamily"] {
 #title,
 h1,
 h2 {
-    color: violet
+    color: violet;
+    font-size: 2em
+}
+
+.pointer {
+    display: inline-block;
+    align-items: center;
 }
 
 #timeline {
     display: block;
     list-style-type: disc;
-    list-style-position: inside;
+    /* list-style-position: outside; */
+    padding: 0px 50px;
 }
 
 .timeline_item {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: flex-start;
+}
+
+.timeline_details {
+    color: rgb(252, 253, 231);
+    margin: 10px;
+    padding: 10px;
+    display: inline-block;
+}
+
+.timeline_date {
+    margin: 10px;
+    padding: 10px;
+    display: inline-block;
 }
 
 .first_left_timeline {
-    padding: 10px 0px 10px 10px;
-}
-
-.timeline_span {
-    padding: 5px 10px;
+    padding: 10px;
+    margin: 10px;
 }
 
 hr {
@@ -132,7 +148,7 @@ nav {
 #timeline {
     margin: 20px 100px 0px 100px;
     padding-bottom: 20px;
-    background: linear-gradient(80deg, rgba(64, 0, 0, 0.3), rgba(241, 137, 241, 0.3), black);
+    background: linear-gradient(75deg, rgba(64, 0, 0, 0.4), rgba(241, 137, 241, 0.2), black);
     z-index: 2;
 }
 
@@ -207,7 +223,7 @@ a:hover {
     padding: 20px;
     text-align: center;
     margin: 25px;
-    border-radius: 50px;
+    border-radius: 20px;
 }
 
 
@@ -246,26 +262,71 @@ small {
     h4 {
         font-size: 0.8em;
     }
-    h1 {
+    h1,
+    #title {
         font-size: 1.3em;
     }
     #tribute-info {
         margin: 10px
     }
+    .timeline_date {
+        padding: 5px 3px;
+    }
+    #img-div {
+        margin-top: 10%;
+    }
     .paragraph,
     #img-caption {
         font-size: 0.8em;
-        margin: 10px 5px 5px 5px;
+        margin: 20px 5px 5px 5px;
         font-weight: 50;
     }
     #img-caption {
         padding: 5px
+    }
+    #second_stop {
+        margin-top: 25px;
+    }
+    footer {
+        font-size: 0.7em;
+    }
+    #timeline {
+        margin: 25px 0px;
+        padding: 1px;
+        padding-bottom: 20px;
+    }
+    .timeline_item {
+        font-size: 0.7em;
     }
 }
 
 @media screen and (min-width: 426px) and (max-width: 768px) {
     #main {
         background-image: url("images/Webp.net-resizeimage-tablette768.jpg");
+    }
+    a,
+    h4 {
+        font-size: 1em;
+    }
+    h1 {
+        font-size: 1.4em;
+    }
+    .paragraph,
+    #img-caption {
+        font-size: 1em;
+        margin: 20px 5px 5px 5px;
+        font-weight: 60;
+    }
+    footer {
+        font-size: 0.7em;
+    }
+    #timeline {
+        margin: 15px 10px;
+        padding-bottom: 20px;
+    }
+    .timeline_item {
+        font-size: 0.7em;
+        padding: 1px;
     }
 }
 
@@ -274,11 +335,14 @@ small {
         background-image: url("images/pexels-paul-basel-2208967.jpg");
         background-size: 1000px;
     }
-}
-
-@media screen and (min-width:1001 px) {
-    #main {
-        background-image: url("images/pexels-paul-basel-2208967.jpg");
+    #timeline {
+        margin: 15px 10px;
+    }
+    .timeline_item {
+        font-size: 0.9em;
+    }
+    footer {
+        font-size: 1em;
     }
 }
 
@@ -287,6 +351,7 @@ small {
         background-image: url("images/pexels-paul-basel-2208967.jpg");
         background-size: 1400px;
     }
+    #timeline {
+        margin: 15px 10px;
+    }
 }
-
-*/
